@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wave Effect</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./lib/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Recording Test</h1>
+        <p>What was the happiest memory with your pet?</p>
+        <button id="action" onclick="handleAction()">Start</button>
+        <button id="actionStop">Stop</button>
+        <h2 id="see">Recording in progress...</h2>
+    </div>
+    <div class="container">
+        <div>
+            <div class="info">
+                <div id="waveform"></div>
+                <div class="control-bar">
+                    <img src="./assests/play.png" alt="play" id="playBtn" title="Play / Pause">
+                    <img src="./assests/stop.png" alt="stop" id="stopBtn" title="Stop">
+                    <img src="./assests/volume.png" alt="volume" id="volumeBtn" title="Mute / Unmute">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Audios</h2>
+        <ul id="audios"></ul>
+    </div>
+    <script src="./js/recorder.js"></script>
+    <script src="./js/waveform.js"></script>
+    <script src="./js/manipulatedom.js"></script>
+</body>
+</html>
