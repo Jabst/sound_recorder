@@ -22,6 +22,12 @@ body{
     align-items: center;
 }
 
+canvas {
+    width: 800px;
+    height: 130px;
+    margin: 2rem auto;
+}
+
 #music-icon{
     height: 150px;
     width: 150px;

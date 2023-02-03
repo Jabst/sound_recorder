@@ -10,8 +10,9 @@ const appendToList = () => {
 }
 
 const pickFile = (index) => {
-    console.log("carregando o audio ", index)
     loadAudio(audioCollection[index]);
+    const audioUrl = URL.createObjectURL(audioCollection[index]);
+    drawAudio(audioUrl);
 }
 
 const saveToPC = (index) => {
